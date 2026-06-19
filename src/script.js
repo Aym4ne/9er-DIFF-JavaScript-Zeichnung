@@ -4,14 +4,16 @@ window.onload = function () {
 
     // Roter ausgefüllter Kreis
     ctx.beginPath();
-    ctx.arc(100, 100, 50, 0, Math.PI * 2); // x, y, radius, startAngle, endAngle
-    ctx.fillStyle = "red";
+    ctx.arc(100, 100, 100, 0, Math.PI * 2); // x, y, radius, startAngle, endAngle
+    ctx.fillStyle = "yellow";
     ctx.fill();
 
     // Blaues nicht ausgefülltes Rechteck
     ctx.beginPath();
     ctx.strokeStyle = "blue";
-    ctx.lineWidth = 3;
+    ctx.lineWidth = 10;
     ctx.rect(200, 70, 120, 80); // x, y, width, height
     ctx.stroke();
+
+
 };
