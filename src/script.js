@@ -1,19 +1,30 @@
 window.onload = function () {
-    const canvas = document.getElementById("meinCanvas"); //Das <canvas>-Element bietet eine Zeichenfläche.
-    const ctx = canvas.getContext("2d"); //Im JavaScript wird das 2D-Zeichenkontextobjekt (ctx) verwendet, um Grafiken zu zeichnen.
+    const canvas = document.getElementById("meinCanvas");
+    const ctx = canvas.getContext("2d");
 
-    // Roter ausgefüllter Kreis
+
     ctx.beginPath();
-    ctx.arc(100, 100, 100, 0, Math.PI * 2); // x, y, radius, startAngle, endAngle
+    ctx.arc(100, 100, 50, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
 
-    // Blaues nicht ausgefülltes Rechteck
     ctx.beginPath();
-    ctx.strokeStyle = "blue";
-    ctx.lineWidth = 10;
-    ctx.rect(200, 70, 120, 80); // x, y, width, height
-    ctx.stroke();
+    ctx.fillStyle = "lightblue";
+    ctx.rect(300, 300, 200, 200);
+    ctx.fill();
 
+    ctx.beginPath();
+    ctx.moveTo(300, 300);
+    ctx.lineTo(400, 200);
+    ctx.lineTo(500, 300);
+    ctx.closePath();
+    ctx.fillStyle = "red";
+    ctx.fill();
 
+    ctx.beginPath();
+    ctx.rect(375, 400, 50, 100);
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+   
 };
