@@ -10,7 +10,7 @@ window.onload = function () {
 
     ctx.beginPath();
     ctx.fillStyle = "lightblue";
-    ctx.rect(300, 300, 200, 200);
+    ctx.rect(-300, 300, 1300, 300);
     ctx.fill();
 
     ctx.beginPath();
@@ -22,8 +22,8 @@ window.onload = function () {
     ctx.fill();
 
     ctx.beginPath();
-    ctx.rect(375, 400, 50, 100);
-    ctx.fillStyle = "black";
+    ctx.rect(367, 400, 100, 200);
+    ctx.fillStyle = "red";
     ctx.fill();
 
     ctx.beginPath();
@@ -36,9 +36,5 @@ window.onload = function () {
     ctx.fillStyle = "#006400";
     ctx.fill();
 
-    ctx.beginPath();
-    ctx.ellipse(100, 100, 50, 75, Math.PI / 4, 0, 2 * Math.PI);
-    ctx.fillStyle="black"
-    ctx.stroke();
 
 };
